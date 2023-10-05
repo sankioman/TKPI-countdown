@@ -9,7 +9,7 @@ body, html {
 header {
     background-color: rgb(70, 30, 125);
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 15px 0;
     font-size: 1.5em;
 }
