@@ -26,3 +26,22 @@ setInterval(updateCountdown, 1000);  // Update every second
 
 
 
+
+// Function to toggle the display of the popup
+function togglePopup() {
+    const popup = document.querySelector('.popup');
+    const displayStatus = window.getComputedStyle(popup).display;
+    if (displayStatus === 'none') {
+        popup.style.display = 'flex';
+    } else {
+        popup.style.display = 'none';
+    }
+}
+
+// Display the popup when the Christmas tree is clicked
+const christmasTree = document.querySelector('.christmas-tree');
+christmasTree.addEventListener('click', togglePopup);
+
+// Hide the popup when the close button is clicked
+const closeButton = document.querySelector('.close-popup');
+closeButton.addEventListener('click', togglePopup);
