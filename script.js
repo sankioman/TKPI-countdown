@@ -1,3 +1,5 @@
+
+document.addEventListener('DOMContentLoaded', function() {
 const countdownDate = new Date("December 24, 2023 23:59:59").getTime();
 
 function updateCountdown() {
@@ -48,9 +50,14 @@ closeButton.addEventListener('click', togglePopup);
 
 // Close the popup when clicking outside the message box
 const popupBackdrop = document.querySelector('.popup');
+const popupContent = document.querySelector('.popup-content');
 popupBackdrop.addEventListener('click', function(event) {
-    // If the event target is the popup backdrop (and not the content or children of the content), close the popup
-    if (event.target === popupBackdrop) {
-        togglePopup();
+    // If the event target is the popup backdrop or a child of the popup content, do nothing
+    if (event.target === popupContent || popupContent.contains(event.target)) {
+        return;
     }
+    // Otherwise, close the popup
+    togglePopup();
+});
+
 });
