@@ -6,9 +6,18 @@ body, html {
     color: rgb(70, 30, 125);
 }
 
+header {
+    background-color: rgb(70, 30, 125);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5em;
+}
+
 .container {
     text-align: center;
     padding-top: 5%;
+    background-color: white;
+    height: 95vh;  /* Take up the remaining viewport height minus the header */
 }
 
 h1 {
