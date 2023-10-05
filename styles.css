@@ -2,8 +2,8 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: rgb(70, 30, 125);
-    color: white;
+    background-color: rgb(70, 70, 100);
+    color: rgb(70, 30, 125);
 }
 
 .container {
