@@ -3,26 +3,24 @@ body, html {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: white;
-    color: rgb(70, 30, 125);
 }
 
 header {
     background-color: rgb(70, 30, 125);
-    color: white;
-    text-align: left;
+    text-align: center;
     padding: 15px 0;
     font-size: 1.5em;
+    color: white;
 }
 
 .container {
     text-align: center;
-    padding-top: 10%;
-    background-color: white;
-    height: 95vh;  /* Take up the remaining viewport height minus the header */
+    padding-top: 5%;
+    color: rgb(70, 30, 125);  /* Set the text color to rgb(70, 30, 125) */
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 4em;
     margin-bottom: 40px;
 }
 
