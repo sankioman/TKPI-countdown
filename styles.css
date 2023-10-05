@@ -21,11 +21,8 @@ header {
     transition: all 0.3s;  /* smooth transition for hover effects */
 }
 
-h1 {
-    font-size: 4.5em;
-    font-weight: 700;  /* bold font weight */
-    margin-bottom: 50px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* subtle text shadow for depth */
+.countdown {
+    margin-top: 30px;  /* Additional spacing since the h1 is now empty */
 }
 
 .countdown span {
