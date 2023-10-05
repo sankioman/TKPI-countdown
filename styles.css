@@ -1,30 +1,42 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
 }
 
 header {
     background-color: rgb(70, 30, 125);
     text-align: center;
-    padding: 15px 0;
-    font-size: 1.5em;
+    padding: 20px 0;
+    font-size: 1.7em;
     color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* subtle shadow for depth */
 }
 
 .container {
     text-align: center;
-    padding-top: 5%;
-    color: rgb(70, 30, 125);  /* Set the text color to rgb(70, 30, 125) */
+    padding-top: 7%;
+    color: rgb(70, 30, 125);
+    transition: all 0.3s;  /* smooth transition for hover effects */
 }
 
 h1 {
-    font-size: 4em;
-    margin-bottom: 40px;
+    font-size: 4.5em;
+    font-weight: 700;  /* bold font weight */
+    margin-bottom: 50px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* subtle text shadow for depth */
 }
 
 .countdown span {
-    font-size: 2em;
-    margin: 0 10px;
+    font-size: 2.2em;
+    margin: 0 15px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;  /* rounded corners */
+    transition: all 0.3s;  /* smooth transition for hover effects */
+}
+
+.countdown span:hover {
+    background-color: rgba(70, 30, 125, 0.1);  /* subtle background on hover */
 }
