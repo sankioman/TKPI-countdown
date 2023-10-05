@@ -26,6 +26,8 @@ header {
 }
 
 .christmas-tree {
+    transform: scale(0.5);  /* reduce size to 50% */
+    margin-top: -70px;  /* position higher */
     margin: 40px auto;
     position: relative;
     width: 120px;
