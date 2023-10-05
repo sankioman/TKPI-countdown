@@ -25,6 +25,50 @@ header {
     margin-top: 30px;  /* Additional spacing since the h1 is now empty */
 }
 
+.christmas-tree {
+    margin: 40px auto;
+    position: relative;
+    width: 120px;
+    height: 140px;
+}
+
+.tree-part {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid rgb(70, 30, 125);
+}
+
+.tree-part:nth-child(2) {
+    bottom: 40px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgb(70, 30, 125);
+}
+
+.tree-part:nth-child(3) {
+    bottom: 70px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgb(70, 30, 125);
+}
+
+.tree-trunk {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(70, 30, 125);
+}
+
+
 .countdown span {
     font-size: 2.2em;
     margin: 0 15px;
