@@ -45,3 +45,12 @@ christmasTree.addEventListener('click', togglePopup);
 // Hide the popup when the close button is clicked
 const closeButton = document.querySelector('.close-popup');
 closeButton.addEventListener('click', togglePopup);
+
+// Close the popup when clicking outside the message box
+const popupBackdrop = document.querySelector('.popup');
+popupBackdrop.addEventListener('click', function(event) {
+    // If the event target is the popup backdrop (and not the content or children of the content), close the popup
+    if (event.target === popupBackdrop) {
+        togglePopup();
+    }
+});
